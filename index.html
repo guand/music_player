@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello React!</title>
+        <link rel="stylesheet" href="public/css/global.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Exo+2:500' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="content"></div>
+        <!-- Dependencies -->
+        <script src="./node_modules/react/dist/react.js"></script>
+        <script src="./node_modules/react-dom/dist/react-dom.js"></script>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+        <!-- Main -->
+        <script src="./dist/bundle.js"></script>
+    </body>
 </html>
